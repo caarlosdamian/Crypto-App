@@ -3,19 +3,20 @@ import { Select, Typography, Row, Col, Avatar, Card } from "antd";
 import { useGetCryptoNewsQuery } from "../services/newsApi";
 import moment from "moment";
 import { useGetCryptosQuery } from "../services/cryptoApi";
+import Loader from "../components/Shared/Loader";
 const { Text, Title } = Typography;
 const { Option } = Select;
 const demoImage =
   "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
 const News = ({ simplified }) => {
   const [newsCategory, setNewsCategory] = useState("Cryptocurrency");
-  const { data: cryptoNews } = useGetCryptoNewsQuery({
+  const { data: cryptoNews, isFetching } = useGetCryptoNewsQuery({
     newsCategory: newsCategory,
     count: simplified ? 6 : 12,
   });
   const { data } = useGetCryptosQuery(100);
 
-  if (!cryptoNews?.value) return "Loading...";
+  if (isFetching) return <Loader />;
   return (
     <Row gutter={[24, 24]}>
       {!simplified && (
