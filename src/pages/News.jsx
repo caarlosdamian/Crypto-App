@@ -3,7 +3,6 @@ import { Select, Typography, Row, Col, Avatar, Card } from "antd";
 import { useGetCryptoNewsQuery } from "../services/newsApi";
 import moment from "moment";
 import { useGetCryptosQuery } from "../services/cryptoApi";
-import { configure } from "@testing-library/dom";
 const { Text, Title } = Typography;
 const { Option } = Select;
 const demoImage =
