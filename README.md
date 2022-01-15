@@ -17,4 +17,4 @@ Techniques used:
 ## Stay up to date with new projects
 
 
-Setup: run ```npm i && npm start``` to start the development server
+Setup: run ```npm i && npm start``` to start the development server.
