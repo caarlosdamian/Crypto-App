@@ -1,6 +1,5 @@
 import Cryptocurrencies from "../pages/Cryptocurrencies";
 import CryptoDetails from "../pages/CryptoDetails";
-import Exchanges from "../pages/Exchanges";
 import HomePage from "../pages/HomePage";
 import News from "../pages/News";
 export const routes = [
@@ -8,10 +7,10 @@ export const routes = [
     path: "/",
     component: HomePage,
   },
-  {
-    path: "/exchanges",
-    component: Exchanges,
-  },
+  // {
+  //   path: "/exchanges",
+  //   component: Exchanges,
+  // },
   {
     path: "/cryptocurrencies",
     component: Cryptocurrencies,
