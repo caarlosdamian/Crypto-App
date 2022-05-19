@@ -33,7 +33,7 @@ const News = ({ simplified }) => {
           >
             <Option value="Cryptocurrency"></Option>
             {data?.data?.coins.map((coin) => (
-              <Option key={coin.id} value={coin.name}>
+              <Option key={coin.name} value={coin.name}>
                 {coin.name}
               </Option>
             ))}
@@ -41,7 +41,7 @@ const News = ({ simplified }) => {
         </Col>
       )}
       {cryptoNews.value.map((news, i) => (
-        <Col xs={24} sm={12} lg={8} key={i}>
+        <Col xs={24} sm={12} lg={8} key={news.name}>
           <Card hoverable className="news-card">
             <a href={news.url} target="_blank" rel="noreferrer">
               <div className="news-image-container">
