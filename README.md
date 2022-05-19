@@ -1,5 +1,5 @@
 # Cryptoverse
-### [Live Site](https://cryptostaticstics.netlify.app/)
+### [Live Site](https://cryptobot-tot.netlify.app/)
 
 ![Crypto Verse](https://i.ibb.co/VQKDjwc/Screen-Shot-2021-09-27-at-11-30-04.png)
 ![Crypto Verse](https://i.ibb.co/Jz26GFQ/Screen-Shot-2021-09-27-at-11-30-11.png)
