@@ -27,8 +27,8 @@ const App = () => {
               level={5}
               style={{ color: "white", textAlign: "center" }}
             >
-              Cryptoverse <br />
-              All rights reserverd
+              Touch of tech &copy;2022<br />
+              All rights reserverd <br />
             </Typography.Title>
             <Space>
               <Link to="/">Home</Link>
